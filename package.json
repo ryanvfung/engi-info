@@ -1,0 +1,29 @@
+{
+    "name": "engi-info",
+    "version": "0.1.0",
+    "author": "Ryan Fung",
+    "license": "MIT",
+    "description": "Engi Info",
+    "main": "z51.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/ryanvfung/engi-info.git"
+    },
+    "homepage": "https://github.com/ryanvfung/engi-info#readme",
+    "keywords": [
+        "engineering"
+    ],
+    "bugs": {
+        "url": "https://github.com/ryanvfung/engi-info/issues"
+    },
+    "devDependencies": {
+        "jade": "^1.11.0"
+    },
+    "scripts": {
+        "jade": "jade src --pretty -o .",
+
+        "aero":   "jade --pretty -o . src/aerodynamics.jade",
+        "fluid":  "jade --pretty -o . src/fluidmechanics.jade",
+        "thermo": "jade --pretty -o . src/thermodynamics.jade"
+    }
+}

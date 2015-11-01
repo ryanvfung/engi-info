@@ -1,0 +1,50 @@
+dt { font-weight: bold; }
+dt::after { content: ":"; }
+
+main dl,
+main dd {
+  margin: 0 1em 0.5em;
+}
+
+.derivation {
+  color: #aaa;
+}
+
+table .MathJax_Display {
+  margin: 0.5em 0em !important;
+}
+
+@media all and (min-width: 500px) {
+  .toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: -2.5em;
+    padding: 0.8em 0.6em 0.7em 0.9em;
+    cursor: pointer;
+    -webkit-user-select: none;
+  }
+  .toggle:hover {
+    background: inherit;
+  }
+  .toggle-arrow {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-top: -0.1em;
+    border-right:  0.2em solid #f60;
+    border-bottom: 0.2em solid #f60;
+    transform: rotate(-135deg);
+  }
+  .nav-ul-hide ul {
+    display: none;
+  }
+  .nav-ul-hide .toggle {
+    padding: 0.55em 0.6em 0.95em 0.9em;
+  }
+  .nav-ul-hide .toggle-arrow {
+    transform: rotate(45deg);
+  }
+}
