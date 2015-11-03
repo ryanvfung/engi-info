@@ -1,0 +1,45 @@
+- var subtitle = 'Thermodynamics';
+- var home = '.';
+
+
+doctype html
+html(lang='en')
+  include ../inc/head.jade
+  body
+    include ../inc/header.jade
+    div#main-wrapper: main(role='main')
+      include ../inc/latex-declarations.jade
+      section
+        h1#ideal-gas Ideal Gas
+        p \[ p = \rho R T \]
+        h2#perfect-gas Perfect Gas
+        p For a perfect gas, the specific heat capacity (\(C_v, C_p\)) is only temperature dependent, whereas it is constant for a calorically perfect gas.
+        table
+          tr
+            th
+            th Perfect Gas
+            th Calorically Perfect Gas
+          tr
+            th Internal energy
+            td \[ C_v = \left( \pddx{e}{T} \right)_p \]
+            td \[ e = C_v T \]
+          tr
+            th Enthalpy
+            td \[ C_p = \left( \pddx{h}{T} \right)_v \]
+            td \[ h = C_p T \]
+      section
+        h1#entropy Entropy
+        p \[ \dx{s} = \left( \frac{\delta q}{T} \right)_{rev} \]
+        h2#gibbs-relationship Gibbs relationship
+        p \[ T\dx{s} = \dx{e} + p \dx{v} \]
+        p.derivation \[ T\dx{s} = c_p \dx{T} + \frac{\dx{p}}{\rho} \]
+        p.derivation \[ \dx{s} = c_p \frac{\dx{T}}{T} - R \frac{\dx{p}}{\rho T} \]
+        p \[ \dx{s} = c_p \frac{\dx{T}}{T} - R \frac{\dx{p}}{p} \]
+        p \[ s_2 - s_1 = c_p \ln{\left( \frac{T_2}{T_1} \right)} - R \ln{\left( \frac{p_2}{p_1} \right)} \]
+      section
+        h1#gas-constant Gas Constant
+        p \[ R = \frac{\hat{R}}{\hat{M}} \]
+        h2#specific-heat-ratio Ratio of specific heats
+        p \[ \gamma = \frac{C_p}{C_v} \]
+        p \( \gamma = \frac{7}{5} \) for a diatomic gas, \( \gamma = \frac{5}{3} \) for a monotomic gas
+    include ../inc/footer.jade

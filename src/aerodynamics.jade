@@ -1,0 +1,59 @@
+- var subtitle = 'Aerodynamics';
+- var home = '.';
+
+
+doctype html
+html(lang='en')
+  include ../inc/head.jade
+  body
+    include ../inc/header.jade
+    div#main-wrapper: main(role='main')
+      section
+        h1#definitions Definitions
+        table
+          thead
+            tr
+              th Symbol
+              th Quantity
+              th Units
+          tbody
+            tr
+              td \[ \alpha \]
+              td Angle of Attack
+              td rad, &deg;
+            tr
+              td \[ C_D \]
+              td Drag coefficient
+              td
+            tr
+              td \[ C_L \]
+              td Lift coefficient
+              td
+            tr
+              td \[ D \]
+              td Drag
+              td N
+            tr
+              td \[ L \]
+              td Lift
+              td N
+      section
+        h1#flow-regimes Flow regimes
+        table
+          tbody
+            tr
+              td M < 0.3
+              td Effectively Incompressible
+            tr
+              td M < 1
+              td Subsonic
+            tr
+              td M > 1
+              td Supersonic
+            tr
+              td 0.8 < M < 1.2
+              td Transonic
+            tr
+              td M > 5
+              td Hypersonic
+    include ../inc/footer.jade
