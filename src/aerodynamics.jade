@@ -8,6 +8,7 @@ html(lang='en')
   body
     include ../inc/header.jade
     div#main-wrapper: main(role='main')
+      include ../inc/latex-declarations.jade
       section
         h1#definitions Definitions
         table
@@ -56,4 +57,21 @@ html(lang='en')
             tr
               td M > 5
               td Hypersonic
+      section
+        h1#vorticity Vorticity
+        p
+          | \[
+          |   \omega \quad = \quad \nabla \times \mathbf{u} \quad = \quad
+          |   \left| \begin{matrix}
+          |     i & j & k \\
+          |     \pddx{}{x} & \pddx{}{y} & \pddx{}{z} \\
+          |     u & v & w \\
+          |   \end{matrix} \right|
+          |   \quad = \quad \frac{1}{r}
+          |   \left| \begin{matrix}
+          |     \mathbf{e}_r & r\mathbf{e}_\theta  & \mathbf{e}_z \\
+          |     \pddx{}{r} & \pddx{}{\theta} & \pddx{}{z} \\
+          |     v_r & rv_\theta & v_z \\
+          |   \end{matrix} \right|
+          | \]
     include ../inc/footer.jade
