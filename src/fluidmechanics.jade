@@ -15,12 +15,30 @@ html(lang='en')
       //-   h1 Compressible flow
       section
         h1#conservation-equations Conservation equations
+
         h2#mass-conservation Mass conservation
         p \[ \dot{m} = \rho A U \]
+
         h2#momentum-conservation Momentum conservation (Newton's 2nd Law)
         p\[ \ddx{}{t}(m U_x) = F_x = m a_x \]
+
         h2#reynolds-transport-theorem Reynold's Transport Theorem
         p \[ \frac{\mathrm{D} m_{sys}}{\mathrm{D}t} = \pddx{}{t} \int_V{\rho \pdx{V}} + \int_A{\rho \left(\vec{U} \cdot \vec{n} \right) \pdx{A} } \]
+
+        h2#bernoulli-equation Bernoulli's Equation
+        p Assumptions:
+        ul
+          li Flow is steady
+          li Flow is inviscid
+          li Flow is incompressible
+        p \[ \frac{u^2}{2} + \frac{p}{\rho} + g z = \mathrm{const} \]
+        h3 Pressure form
+        p \[ \frac{1}{2} \rho u^2 + p + \rho g = \mathrm{const} \]
+        h3 Energy head form
+        p \[ \frac{u^2}{2g} + \frac{p}{\rho g} + z = H \]
+
+        h2 Steady Flow Energy Equation
+        p \[ \dot{Q} - \dot{W} = \frac{\mathrm{D}E_{total}}{\mathrm{D}t} = \int_A{\rho \left( c_v T + \frac{u^2}{2} + \frac{p}{\rho} + g z \right) \vec{U} \cdot \vec{\delta A}} \]
       section
         h1#isentropic-flow Isentropic flow
         p \[ \dx{s} = 0 \]
