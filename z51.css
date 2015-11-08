@@ -197,9 +197,6 @@ nav#nav ul {
 nav#nav ul li {
     background: #fff;
 }
-nav#nav ul li:nth-child(even) {
-    background: #f3f3f3;
-}
 nav#nav ul li a {
     display: block;
     padding: 0.385em 0.769em;
@@ -241,8 +238,15 @@ nav#nav .nav-this:hover {
     background: #ddd;
 }
 
-main p {
+main p,
+main ul,
+main ol {
     margin: 0 1em 0.5em;
+}
+
+main ul,
+main ol {
+    padding-left: 2em;
 }
 
 @media all and (min-width: 500px) {

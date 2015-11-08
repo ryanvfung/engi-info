@@ -6,12 +6,25 @@ main dd {
   margin: 0 1em 0.5em;
 }
 
-.derivation {
+.c-derivation {
   color: #aaa;
 }
 
+.c-quantity-table {
+  line-height: 1.5;
+}
+
+.c-quantity-table td {
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.c-quantity-table td:first-child {
+  font-family: MathJax_Math-italic;
+}
+
 table .MathJax_Display {
-  margin: 0.5em 0em !important;
+  margin: 0.25em 0em !important;
 }
 
 @media all and (min-width: 500px) {

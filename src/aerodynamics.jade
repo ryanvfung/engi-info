@@ -9,9 +9,12 @@ html(lang='en')
     include ../inc/header.jade
     div#main-wrapper: main(role='main')
       include ../inc/latex-declarations.jade
+
+
+
       section
         h1#definitions Definitions
-        table
+        table.c-quantity-table
           thead
             tr
               th Symbol
@@ -19,25 +22,28 @@ html(lang='en')
               th Units
           tbody
             tr
-              td \[ \alpha \]
+              td &alpha;
               td Angle of Attack
               td rad, &deg;
             tr
-              td \[ C_D \]
+              td C#[sub D]
               td Drag coefficient
               td
             tr
-              td \[ C_L \]
+              td C#[sub L]
               td Lift coefficient
               td
             tr
-              td \[ D \]
+              td D
               td Drag
               td N
             tr
-              td \[ L \]
+              td L
               td Lift
               td N
+
+
+
       section
         h1#flow-regimes Flow regimes
         table
@@ -57,6 +63,9 @@ html(lang='en')
             tr
               td M > 5
               td Hypersonic
+
+
+
       section
         h1#vorticity Vorticity
         p
@@ -74,4 +83,5 @@ html(lang='en')
           |     v_r & rv_\theta & v_z \\
           |   \end{matrix} \right|
           | \]
+
     include ../inc/footer.jade
