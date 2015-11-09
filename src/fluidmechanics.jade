@@ -9,10 +9,29 @@ html(lang='en')
     include ../inc/header.jade
     div#main-wrapper: main(role='main')
       include ../inc/latex-declarations.jade
+
+      section
+        h1#definitions Definitions
+        include ../inc/thermofluid-quantities.jade
+
+        h2#dimensionless-numbers Dimensionless Numbers
+        dl
+          dt Reynolds number
+          dd Ratio of the inertial forces to viscous forces in fluid flow
+          dd \[ \mathrm{Re} = \frac{\rho v l}{\mu} = \frac{vl}{\nu} \]
+          dt Mach number
+          dd Ratio of the velocity to the speed of sound in a fluid
+          dd \[ \mathrm{Ma} = \frac{v}{a} \]
+
+
+
       //- section
       //-   h1 Incompressible flow
       //-   h2 Bernoulli's equation
       //-   h1 Compressible flow
+
+
+
       section
         h1#conservation-equations Conservation equations
 
@@ -39,6 +58,9 @@ html(lang='en')
 
         h2 Steady Flow Energy Equation
         p \[ \dot{Q} - \dot{W} = \frac{\mathrm{D}E_{total}}{\mathrm{D}t} = \int_A{\rho \left( c_v T + \frac{u^2}{2} + \frac{p}{\rho} + g z \right) \vec{U} \cdot \vec{\delta A}} \]
+
+
+
       section
         h1#isentropic-flow Isentropic flow
         p \[ \dx{s} = 0 \]
@@ -48,7 +70,11 @@ html(lang='en')
           |    = \frac{c_p}{c_p-c_v}
           |    = \frac{\frac{c_p}{c_v}}{\frac{c_p}{c_v}-1}
           |    = \frac{\gamma}{\gamma - 1} \]
+
+
+
       section
         h1#speed-of-sound Speed of sound
         p \[ a^2 = \gamma R T \]
+
     include ../inc/footer.jade
