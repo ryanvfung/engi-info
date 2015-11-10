@@ -22,6 +22,7 @@
     "scripts": {
         "jade": "jade src --pretty -o .",
 
+        "index":   "jade --pretty -o . src/index.jade",
         "aero":   "jade --pretty -o . src/aerodynamics.jade",
         "fluid":  "jade --pretty -o . src/fluidmechanics.jade",
         "thermo": "jade --pretty -o . src/thermodynamics.jade"
