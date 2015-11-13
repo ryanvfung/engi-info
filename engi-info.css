@@ -5,6 +5,12 @@ section {
 dt { font-weight: bold; }
 dt::after { content: ":"; }
 
+var {
+  font-family: MathJax_Main;
+  font-style: normal;
+}
+var i { font-family: MathJax_Math-italic; }
+
 main dl,
 main dd {
   margin: 0 1em 0.5em;
