@@ -22,25 +22,37 @@ html(lang='en')
               th Units
           tbody
             tr
-              td &alpha;
-              td Angle of Attack
-              td rad, &deg;
-            tr
-              td C#[sub D]
+              td: var C#[sub D]
               td Drag coefficient
               td
             tr
-              td C#[sub L]
+              td: var c#[sub D]
+              td Sectional drag coefficient
+              td
+            tr
+              td: var C#[sub L]
               td Lift coefficient
               td
             tr
-              td D
+              td: var c#[sub L]
+              td Sectional lift coefficient
+              td
+            tr
+              td: var D
               td Drag
               td N
             tr
-              td L
+              td: var L
               td Lift
               td N
+            tr
+              td: var M
+              td Mach number
+              td
+            tr
+              td: var &alpha;
+              td Angle of Attack
+              td rad, &deg;
 
 
 
@@ -49,19 +61,19 @@ html(lang='en')
         table
           tbody
             tr
-              td M < 0.3
+              td #[var M] < 0.3
               td Effectively Incompressible
             tr
-              td M < 1
+              td #[var M] < 1
               td Subsonic
             tr
-              td M > 1
+              td #[var M] > 1
               td Supersonic
             tr
-              td 0.8 < M < 1.2
+              td 0.8 < #[var M] < 1.2
               td Transonic
             tr
-              td M > 5
+              td #[var M] > 5
               td Hypersonic
 
 

@@ -5,11 +5,11 @@ section {
 dt { font-weight: bold; }
 dt::after { content: ":"; }
 
-var {
+var.u-mathrm {
   font-family: MathJax_Main;
   font-style: normal;
 }
-var i { font-family: MathJax_Math-italic; }
+var { font-family: MathJax_Math-italic; }
 
 main dl,
 main dd {
