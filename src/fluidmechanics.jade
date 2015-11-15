@@ -1,4 +1,4 @@
-- var subtitle = 'Fluid Mechanics';
+- var subtitle = 'Fluid mechanics';
 - var home = '.';
 
 
@@ -14,7 +14,7 @@ html(lang='en')
         h1#definitions Definitions
         include ../inc/thermofluid-quantities.jade
 
-        h2#dimensionless-numbers Dimensionless Numbers
+        h2#dimensionless-numbers Dimensionless numbers
         dl
           dt Reynolds number
           dd Ratio of the inertial forces to viscous forces in fluid flow
@@ -38,8 +38,9 @@ html(lang='en')
         h2#mass-conservation Mass conservation
         p \[ \dot{m} = \rho A U \]
 
-        h2#momentum-conservation Momentum conservation (Newton's 2nd Law)
-        p\[ \ddx{}{t}(m U_x) = F_x = m a_x \]
+        h2#momentum-conservation Momentum conservation
+        p Equivalent to Newton's 2nd law
+        p \[ \ddx{}{t}(m U_x) = F_x = m a_x \]
 
         h2#reynolds-transport-theorem Reynold's Transport Theorem
         p \[ \frac{\mathrm{D} m_{sys}}{\mathrm{D}t} = \pddx{}{t} \int_V{\rho \pdx{V}} + \int_A{\rho \left(\vec{U} \cdot \vec{n} \right) \pdx{A} } \]
