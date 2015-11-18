@@ -3,7 +3,6 @@ section {
 }
 
 dt { font-weight: bold; }
-dt::after { content: ":"; }
 
 var.u-mathrm {
   font-family: MathJax_Main;
