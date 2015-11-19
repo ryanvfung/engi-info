@@ -1,0 +1,75 @@
+- var subtitle = 'Flight mechanics';
+- var home = '.';
+
+
+doctype html
+html(lang='en')
+  include ../inc/head.jade
+  body
+    include ../inc/header.jade
+    div#main-wrapper: main(role='main')
+      include ../inc/latex-declarations.jade
+
+
+
+      section
+        h1#definitions Definitions
+        table.c-quantity-table
+          thead
+            tr
+              th Symbol
+              th Quantity
+              th Units
+          tbody
+            tr
+              td: var C#[sub D]
+              td Drag coefficient
+              td
+            tr
+              td: var C#[sub L]
+              td Lift coefficient
+              td
+            tr
+              td: var M
+              td Mach number
+              td
+            tr
+              td: var p
+              td Pressure
+              td Pa (N m#[sup &minus;2])
+            tr
+              td: var T
+              td Temperature
+              td K
+            tr
+              td: var V
+              td True airspeed
+              td m s#[sup &minus;1]
+            tr
+              td: var V#[sub E]
+              td Equivalent airspeed
+              td m s#[sup &minus;1]
+            tr
+              td: var &alpha;
+              td Angle of attack
+              td rad, &deg;
+            tr
+              td: var &delta;
+              td Relative pressure
+              td
+            tr
+              td: var &theta;
+              td Relative temperature
+              td
+            tr
+              td: var &rho;
+              td Density
+              td kg m#[sup &minus;3]
+            tr
+              td: var &sigma;
+              td Relative density
+              td
+
+
+
+    include ../inc/footer.jade
