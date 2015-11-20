@@ -56,25 +56,7 @@ html(lang='en')
 
 
 
-      section
-        h1#flow-regimes Flow regimes
-        table
-          tbody
-            tr
-              td #[var M] < 0.3
-              td Effectively Incompressible
-            tr
-              td #[var M] < 1
-              td Subsonic
-            tr
-              td #[var M] > 1
-              td Supersonic
-            tr
-              td 0.8 < #[var M] < 1.2
-              td Transonic
-            tr
-              td #[var M] > 5
-              td Hypersonic
+      include ../inc/aerodynamic-terms.jade
 
 
 
