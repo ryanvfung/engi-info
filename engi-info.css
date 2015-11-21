@@ -1,6 +1,4 @@
-section {
-  margin: 1em 0;
-}
+section { margin: 1em 0; }
 
 dt { font-weight: bold; }
 
@@ -26,58 +24,46 @@ main dd {
   text-decoration: underline;
 }
 
-.c-derivation {
-  color: #aaa;
-}
+.c-derivation { color: #aaa; }
 
-.c-quantity-table {
-  line-height: 1.5;
-}
+.c-quantity-table { line-height: 1.5; }
 
 .c-quantity-table td {
   text-align: center;
   vertical-align: baseline;
 }
 
-.c-quantity-table td:first-child {
-  font-family: MathJax_Math-italic;
-}
+.c-quantity-table td:first-child { font-family: MathJax_Math-italic; }
 
-table .MathJax_Display {
-  margin: 0.25em 0em !important;
-}
+table .MathJax_Display { margin: 0.25em 0em !important; }
 
 @media all and (min-width: 500px) {
   .toggle {
-    display: block;
     position: absolute;
     right: 0;
+    display: block;
     width: 1em;
     height: 1em;
     margin-top: -2.5em;
-    padding: 0.8em 0.6em 0.7em 0.9em;
+    padding: .8em .6em .7em .9em;
+    background-color: #fff;
     cursor: pointer;
     -webkit-user-select: none;
   }
-  .toggle:hover {
-    background: inherit;
-  }
+
+  .toggle:hover { background: #e8e8e8; }
+
   .toggle-arrow {
     display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin-top: -0.1em;
-    border-right:  0.2em solid #f60;
-    border-bottom: 0.2em solid #f60;
+    width: .5em;
+    height: .5em;
+    margin-top: -.1em;
     transform: rotate(-135deg);
+    border-right: .2em solid #f60;
+    border-bottom: .2em solid #f60;
   }
-  .nav-ul-hide ul {
-    display: none;
-  }
-  .nav-ul-hide .toggle {
-    padding: 0.55em 0.6em 0.95em 0.9em;
-  }
-  .nav-ul-hide .toggle-arrow {
-    transform: rotate(45deg);
-  }
+
+  .nav-ul-hide ul { display: none; }
+  .nav-ul-hide .toggle { padding: .55em .6em .95em .9em; }
+  .nav-ul-hide .toggle-arrow { transform: rotate(45deg); }
 }
