@@ -14,6 +14,7 @@ html(lang='en')
 
       section
         h1#definitions Definitions
+        h2#quantities Quantities
         table.c-quantity-table
           thead
             tr
@@ -21,6 +22,10 @@ html(lang='en')
               th Quantity
               th Units
           tbody
+            tr
+              td: var A
+              td Aspect Ratio
+              td
             tr
               td: var C#[sub D]
               td Drag coefficient
@@ -62,6 +67,14 @@ html(lang='en')
               td Relative temperature
               td
             tr
+              td: var &Lambda;
+              td Wing sweep
+              td
+            tr
+              td: var &lambda;
+              td Taper Ratio
+              td
+            tr
               td: var &rho;
               td Density
               td kg m#[sup &minus;3]
@@ -69,6 +82,33 @@ html(lang='en')
               td: var &sigma;
               td Relative density
               td
+
+        h2#terminology Terminology
+        dl
+          dt Flight path
+          dd The path through space traced by the centre of gravity
+
+          dt Equivalent airspeed (EAS)
+          dd The airspeed at sea level in the International Standard Atmosphere at which the dynamic pressure is the same as the dynamic pressure at the true airspeed (TAS) and altitude at which the aircraft is flying.
+          dd \[ \frac{1}{2} \rho V^2 = \frac{1}{2} \rho_0 V_E^2 \]
+          dd \[ V = V_E \left(\frac{\rho_0}{\rho}\right)^\frac{1}{2} = \frac{V_E}{\sqrt{\sigma}} \]
+        h3#wing-planform-terminology Wing planform terminology
+        dl
+          dt Chord
+          dd The distance between the leading edge and the trailing edge
+
+          dt Taper ratio
+          dd The ratio between the tip chord and the root chord
+          dd \[ \lambda = \frac{c_T}{c_R} \] 
+
+          dt Wing sweep
+          dd The angle that the wing makes against oncoming flow
+
+          dt Aspect ratio
+          dd Non-tapered wings: ratio between the wing span and the mean chord
+          dd \[ A = \frac{b}{\bar{c}} \]
+          dd Tapered wings: ratio between the wing span and the planform area
+          dd \[ A = \frac{b^2}{S} \]
 
 
 
