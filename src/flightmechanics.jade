@@ -55,6 +55,10 @@ html(lang='en')
               td Equivalent airspeed
               td m s#[sup &minus;1]
             tr
+              td: var W
+              td Weight
+              td N
+            tr
               td: var &alpha;
               td Angle of attack
               td rad, &deg;
@@ -113,6 +117,20 @@ html(lang='en')
 
 
       include ../inc/aerodynamic-terms.jade
+
+
+
+      section
+        h1#drag Drag
+        h2 Drag coefficient
+        p The drag coefficient is the sum of the profile drag and the induced drag, with #[var K] being a constant depending on the wing planform shape.
+        p \[ C_D = C_{D_0} + C_{D_i} = C_{D_0} + \frac{K}{\pi A}C_L^2 \]
+
+        h2 Minimum drag speed
+        p \[ V_{MD} = \left(\frac{2W}{\rho S}\right)^\frac{1}{2} \left(\frac{K}{\pi A C_{D_0}}\right)^\frac{1}{4} \]
+
+        h2 Minimum drag
+        p \[ D_{min} = 2W \left(\frac{K C_{D_0}}{\pi A}\right)^\frac{1}{2} \]
 
 
 
