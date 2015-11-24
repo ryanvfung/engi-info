@@ -25,6 +25,8 @@
 
         "index":  "jade --pretty -o . src/index.jade",
         "aero":   "jade --pretty -o . src/aerodynamics.jade",
+        "astro":  "jade --pretty -o . src/astronautics.jade",
+        "flight": "jade --pretty -o . src/flightmechanics.jade",
         "fluid":  "jade --pretty -o . src/fluidmechanics.jade",
         "thermo": "jade --pretty -o . src/thermodynamics.jade"
     }
