@@ -22,6 +22,14 @@ html(lang='en')
               th Units
           tbody
             tr
+              td: var g[sub 0]
+              td Gravitational acceleration (at sea level)
+              td m s#[sup &minus;2]
+            tr
+              td: var I[sub SP]
+              td Specific impulse
+              td s
+            tr
               td: var M
               td Mass
               td kg
@@ -34,8 +42,20 @@ html(lang='en')
               td Burnout mass
               td kg
             tr
+              td: var P#[sub a]
+              td Ambient pressure
+              td Pa (N m#[sup &minus;2])
+            tr
+              td: var P#[sub e]
+              td Exit pressure
+              td Pa (N m#[sup &minus;2])
+            tr
               td: var V
               td Velocity
+              td m s#[sup &minus;1]
+            tr
+              td: var V#[sub e]
+              td Exit velocity
               td m s#[sup &minus;1]
             tr
               td: var V#[sub ex]
@@ -48,6 +68,22 @@ html(lang='en')
         h1#rocket-equation The rocket equation
         p \[ \ddx{V}{t} = -V_{ex} \frac{1}{M} \ddx{M}{t} \]
         p \[ \Delta V = V_{ex} \ln{\left(\frac{M_0}{M_b}\right)} \]
+
+
+
+      section
+        h1#chemical-propulsion Chemical propulsion
+        p The following equations apply to high-thrust propulsion systems such as chemical propulsion
+        h2 Thrust equation
+        p \[ T = \ddx{m}{t} V_e + (P_e - P_a) A_e = \ddx{m}{t} V_{ex} \]
+        h2 Impulse
+        p \[ I = \int_0^t{T\dx{t}} = \int_0^t{-\ddx{M}{t} V_{ex}\dx{t}} = -V_{ex}\int_{M_0}^{M_b}{\dx{M}} = V_{ex}(M_0-M_b) = V_{ex}M_e \]
+        p \[ I = K \sqrt\frac{T}{M} \]
+        p \[ \frac{\Delta V}{V_{ex}} = \ln{\left(\frac{1}{1-\frac{M_e}{M_0}}\right)} \]
+        h2 Specific impulse
+        p \[ I_{SP} = \frac{I}{M_e g_0} = \frac{V_{ex}}{g_0} \]
+        p \[ T = g_0 I_{SP} \ddx{m}{t} \]
+        p \[ \Delta V = I_{SP} g_0 \ln\frac{M_0}{M_b} \]
 
 
     include ../inc/footer.jade
