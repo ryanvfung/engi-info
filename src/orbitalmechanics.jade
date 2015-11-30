@@ -1,0 +1,90 @@
+- var subtitle = 'Orbital mechanics';
+- var home = '.';
+
+
+doctype html
+html(lang='en')
+  include ../inc/head.jade
+  body
+    include ../inc/header.jade
+    div#main-wrapper: main(role='main')
+      include ../inc/latex-declarations.jade
+
+
+
+      section
+        h1#definitions Definitions
+        table.c-quantity-table
+          thead
+            tr
+              th Symbol
+              th Quantity
+              th Units
+          tbody
+            tr
+              td a
+              td Semi-major axis
+              td km
+            tr
+              td b
+              td Semi-minor axis
+              td km
+            tr
+              td e
+              td Eccentricity
+              td
+            tr
+              td H
+              td Moment of momentum
+              td kg m#[sup 2] s#[sup &minus; 1]
+            tr
+              td h
+              td Specific moment of momentum
+              td m#[sup 2] s#[sup &minus; 1]
+            tr
+              td i
+              td Inclination
+              td rad, &degree;
+            tr
+              td r
+              td Radius
+              td km
+            tr
+              td p
+              td Semi-latus rectum
+              td km
+            tr
+              td T
+              td Orbital period
+              td s
+            tr
+              td V
+              td Orbital velocity
+              td m s#[sup &minus;1]
+            tr
+              td &epsilon;
+              td Orbital energy
+              td J
+            tr
+              td &theta;
+              td True anomaly
+              td rad, &degree;
+            tr
+              td &mu;
+              td Gravitational constant
+              td km#[sup 3] s#[sup &minus;2]
+            tr
+              td &Omega;
+              td Right ascension of the ascending node (RAAN)
+              td rad, &degree;
+
+        h2#terminology Terminology
+        dl
+          dt Periapsis, perigee, perihelion
+          dd The closest point in an orbit around a barycenter, the Eartd or the Sun respectively
+          dt Apoapsis, apogee, aphelion
+          dd The furthest point in an orbit around a barycenter, the Eartd or the Sun respectively
+
+
+
+    include ../inc/footer.jade

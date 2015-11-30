@@ -2,6 +2,10 @@ section { margin: 1em 0; }
 
 dt { font-weight: bold; }
 
+#nav > ul {
+  border-top: .1em solid #ffe0cc;
+}
+
 var.u-mathrm {
   font-family: MathJax_Main;
   font-style: normal;

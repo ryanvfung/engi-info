@@ -28,6 +28,8 @@
         "astro":  "jade --pretty -o . src/astronautics.jade",
         "flight": "jade --pretty -o . src/flightmechanics.jade",
         "fluid":  "jade --pretty -o . src/fluidmechanics.jade",
+        "orbit":  "jade --pretty -o . src/orbitalmechanics.jade",
+        "solid":  "jade --pretty -o . src/solidmechanics.jade",
         "thermo": "jade --pretty -o . src/thermodynamics.jade"
     }
 }
