@@ -20,16 +20,16 @@
         "jade": "^1.11.0"
     },
     "scripts": {
-        "make": "jade src --pretty -o .",
-        "jade": "jade src --pretty -o .",
+        "make": "jade src --pretty -o dist",
+        "jade": "jade src --pretty -o dist",
 
-        "index":  "jade --pretty -o . src/index.jade",
-        "aero":   "jade --pretty -o . src/aerodynamics.jade",
-        "astro":  "jade --pretty -o . src/astronautics.jade",
-        "flight": "jade --pretty -o . src/flightmechanics.jade",
-        "fluid":  "jade --pretty -o . src/fluidmechanics.jade",
-        "orbit":  "jade --pretty -o . src/orbitalmechanics.jade",
-        "solid":  "jade --pretty -o . src/solidmechanics.jade",
-        "thermo": "jade --pretty -o . src/thermodynamics.jade"
+        "index":  "jade --pretty -o dist src/index.jade",
+        "aero":   "jade --pretty -o dist src/aerodynamics.jade",
+        "astro":  "jade --pretty -o dist src/astronautics.jade",
+        "flight": "jade --pretty -o dist src/flightmechanics.jade",
+        "fluid":  "jade --pretty -o dist src/fluidmechanics.jade",
+        "orbit":  "jade --pretty -o dist src/orbitalmechanics.jade",
+        "solid":  "jade --pretty -o dist src/solidmechanics.jade",
+        "thermo": "jade --pretty -o dist src/thermodynamics.jade"
     }
 }
